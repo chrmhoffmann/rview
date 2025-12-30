@@ -100,7 +100,7 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 app:srcCompat="@drawable/ic_comment"
-                android:tint="@color/primaryDarkForeground"
+                app:tint="@color/primaryDarkForeground"
                 android:visibility="@{model.inlineComments &gt; 0 ? View.VISIBLE : View.GONE}"
                 tools:ignore="ContentDescription" />
             <com.ruesga.rview.widget.StyleableTextView
@@ -117,7 +117,7 @@
                 android:layout_width="18dp"
                 android:layout_height="18dp"
                 app:srcCompat="@drawable/ic_draft"
-                android:tint="?attr/colorAccent"
+                app:tint="?attr/colorAccent"
                 android:visibility="@{model.draftComments &gt; 0 ? View.VISIBLE : View.GONE}"
                 tools:ignore="ContentDescription" />
             <com.ruesga.rview.widget.StyleableTextView

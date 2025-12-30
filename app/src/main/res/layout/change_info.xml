@@ -84,7 +84,7 @@
                     android:background="?attr/selectableItemBackgroundBorderless"
                     app:srcCompat="@drawable/selector_starred"
                     android:onClick="@{handlers::onStarredPressed}"
-                    android:tint="@color/starred"
+                    app:tint="@color/starred"
                     tools:ignore="ContentDescription" />
 
                 <ImageView
@@ -96,7 +96,7 @@
                     android:background="?attr/selectableItemBackgroundBorderless"
                     app:srcCompat="@drawable/ic_share"
                     android:onClick="@{handlers::onSharePressed}"
-                    android:tint="?attr/colorAccent"
+                    app:tint="?attr/colorAccent"
                     tools:ignore="ContentDescription" />
             </LinearLayout>
 
@@ -214,7 +214,7 @@
                     app:srcCompat="@drawable/ic_edit"
                     android:layout_marginStart="5dp"
                     android:layout_marginLeft="5dp"
-                    android:tint="@color/accent"
+                    app:tint="@color/accent"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:onClick="@{handlers::onEditAssigneePressed}"
                     android:visibility="@{safeUnbox(isAuthenticated) &amp;&amp; actions[ModelHelper.ACTION_ASSIGNEE] != null ? View.VISIBLE : View.GONE}"
@@ -392,7 +392,7 @@
                     app:srcCompat="@drawable/ic_edit"
                     android:layout_marginStart="5dp"
                     android:layout_marginLeft="5dp"
-                    android:tint="@color/accent"
+                    app:tint="@color/accent"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:onClick="@{handlers::onBranchEditPressed}"
                     app:bindToBoolean="@{safeUnbox(isAuthenticated) &amp;&amp; safeUnbox(isOwner) &amp;&amp; (model.status.equals(ChangeStatus.NEW) || model.status.equals(ChangeStatus.DRAFT))}"
@@ -434,7 +434,7 @@
                     app:srcCompat="@drawable/ic_edit"
                     android:layout_marginStart="5dp"
                     android:layout_marginLeft="5dp"
-                    android:tint="@color/accent"
+                    app:tint="@color/accent"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:onClick="@{handlers::onTopicEditPressed}"
                     android:visibility="@{safeUnbox(isAuthenticated) &amp;&amp; actions[ModelHelper.ACTION_TOPIC] != null ? View.VISIBLE : View.GONE}"
@@ -484,7 +484,7 @@
                         android:layout_marginLeft="-21dp"
                         android:layout_toEndOf="@id/tags_labels"
                         android:layout_toRightOf="@id/tags_labels"
-                        android:tint="@color/accent"
+                        app:tint="@color/accent"
                         android:background="?attr/selectableItemBackgroundBorderless"
                         android:onClick="@{handlers::onTagsEditPressed}"
                         android:layout_gravity="center_vertical"
@@ -574,7 +574,7 @@
                     android:layout_width="16dp"
                     android:layout_height="16dp"
                     app:srcCompat="@drawable/ic_warning"
-                    android:tint="@color/accent"
+                    app:tint="@color/accent"
                     android:layout_marginEnd="4dp"
                     android:layout_marginRight="4dp"
                     tools:ignore="ContentDescription"/>
